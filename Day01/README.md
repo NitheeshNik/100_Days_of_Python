@@ -3,4 +3,4 @@
 ## Table of contents
 
 - [Overview](#overview)
-  -[The challenge](#the-challenge)
+- -[The challenge](#the-challenge)

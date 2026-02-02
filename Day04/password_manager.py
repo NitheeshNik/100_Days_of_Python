@@ -2,7 +2,6 @@ pwd = input("What is the master password? ")
 
 def view():
     pass
-view()
 def add():
     pass
 while True:
@@ -10,9 +9,9 @@ while True:
     if mode == "q":
         break
     if mode == "view":
-        pass
+        view()
     elif mode == "add":
-        pass
+        add()
     else:
         print("Invalid mode.")
         continue

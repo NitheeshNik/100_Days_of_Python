@@ -8,15 +8,15 @@ nr_letters = int(input("How many letters would you like in your password?\n"))
 nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 
-output = letters[0 : nr_letters ]
+# Easy Level
+password = ""
+for char in range(0, nr_letters):
+    password += random.choice(letters)
 
-output_1 = symbols[0 : nr_symbols ]
+for char in range(0, nr_symbols):
+    password += random.choice(symbols)
 
-output_2 = numbers[0 : nr_numbers ]
+for char in range(0, nr_numbers):
+    password += random.choice(numbers)
 
-add = output + output_1 + output_2
-print(add)
-random.shuffle(add)
-print(add)
-covet = "".join(add)
-print(f"Your password is: {covet}")
+print(password)

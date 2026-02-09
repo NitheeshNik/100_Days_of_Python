@@ -1,10 +1,10 @@
-class Student:
-    def __init__(self, name, roll_no):
-        self.name = name
-        self.roll_no = roll_no
-
-    def show_details(self):
-        print(self.name, self.roll_no)
-
-s1 = Student("Nick", 101)
-s1.show_details()
+import getpass
+database = {"aman.kharwal": "123456", "kharwal.aman": "654321"}
+username = input("Enter Your Username : ")
+password = getpass.getpass("Enter Your Password : ")
+for i in database.keys():
+    if username == i:
+        while password != database.get(i):
+            password = getpass.getpass("Enter Your Password Again : ")
+        break
+print("Verified")

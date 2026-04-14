@@ -22,8 +22,14 @@ from hand_art import HANGMANPICS
 
 # number = 4
 # print(number * '_')
+str = []
+str1 = []
+n1 ="2222"
 n = "1234"
-for i in n :
-    if i == 1:
-        print(i)
-    continue
+for i in n:
+    str.append(i)
+for i in n1:
+    str1.append(i)
+
+if str == str1:
+    print("hi")
